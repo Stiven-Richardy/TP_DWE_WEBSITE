@@ -81,51 +81,6 @@ article ul li {
     padding: 5px;
 }
 
-.galeria {
-    display: flex;
-    overflow-x: auto;
-    margin-top: 20px;
-}
-
-.imagem-container {
-    position: relative;
-    margin-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-}
-
-.imagem {
-    width: 350px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.nome-produto {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    background-color: #E63946;
-    padding: 5px 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.imagem-container:hover .nome-produto {
-    opacity: 1;
-}
-
-.imagem-container:last-child {
-    margin-right: 0;
-}
-
-.imagem:hover {
-    transform: scale(1.1);
-}
-
 article strong {
     color: #E63946;
 }
