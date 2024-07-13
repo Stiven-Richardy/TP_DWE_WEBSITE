@@ -10,6 +10,30 @@
         <link rel="icon" href="images/logo.png" type="image/png">
         <link rel="stylesheet" href="estilo.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="grid/simple-grid.min.css" rel="stylesheet">
+        <style>
+            .menu a{
+                color: black;
+                text-decoration: underline;
+            }
+
+            .shop{
+                cursor: pointer;
+                text-align: center;
+                font-size: large;
+                text-transform: uppercase;
+                width: 80%;
+                background-color: #E63946;
+                color: #fff;
+                border: 0px;
+                border-radius: 10px;
+                height: 50px;
+            }
+
+            .shop:hover{
+                color: rgb(255, 158, 158);
+            }
+        </style>
     </head>
     <body>
     <header>
@@ -43,101 +67,184 @@
             <p>As marcas que representamos são conhecidas por sua dedicação à inovação, sustentabilidade e responsabilidade social. Ao escolher a <strong>Revendedora Magda</strong> como seu parceiro de negócios, você não está apenas adquirindo produtos de alta qualidade, mas também se associando a valores de integridade e comprometimento.</p>
             <p>Nossa equipe está aqui para oferecer suporte e orientação em cada etapa do caminho. Desde o gerenciamento de pedidos até dicas de marketing e vendas, estamos comprometidos em ajudá-lo a alcançar o sucesso como revendedor de cosméticos. Junte-se a nós na <strong>Revendedora Magda</strong> e comece sua jornada para o sucesso hoje mesmo!</p>            
             <br>
-            <h3>Natura</h3>
-            <br>
-  
-      <div class="container">
-        <div class="card-deck mb-3 text-center">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header p-3 mb-2 bg-danger text-white">
-                <h4 class="my-0 font-weight-normal">Produto 1</h4>
-            </div>
-            <div class="card-body">
-                <img src="" alt ="Em produção" class="img-fluid"/>
-                <h1 class="card-title pricing-card-title">R$0,00</h1>
-            </div>
-          </div>
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header p-3 mb-2 bg-danger text-white">
-                    <h4 class="my-0 font-weight-normal">Produto 1</h4>
-            </div>
-            <div class="card-body">
-                <img src="" alt ="Em produção" class="img-fluid"/>
-                <h1 class="card-title pricing-card-title">R$15,00</h1>
-            </div>
-          </div>
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header p-3 mb-2 bg-danger text-white">
-              <h4 class="my-0 font-weight-normal">Produto 1</h4>
-            </div>
-            <div class="card-body">
-                <img src="" alt ="Em produção" class="img-fluid"/>
-                <h1 class="card-title pricing-card-title">R$29,00</h1>
-            </div>
-          </div>
-        </div>
 
-            <h3 id>Natura</h3>
-            <div id="produtos">
-                <div class="produto-single">
-                    <img src="images/batom-natura.png"/>
-                    <p>Batom da Natura R$24,99</p>
+            <div class="container">
+                <div class="row">
+                  <div class="col-9">
+
+                    <!--Natura-->
+                    <h3 id="1">Natura</h3>
+                    <br>
+                    <div class="container">
+                        <div class="card-deck mb-3 text-center">
+                          <div class="card mb-4 shadow-sm">
+                            <div class="card-header p-3 mb-2 bg-danger text-white">
+                                <h4 class="my-0 font-weight-normal">Batom</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/batom-natura.png" alt ="Em produção" class="img-fluid"/>
+                                <h1 class="card-title pricing-card-title">R$24,99</h1>
+                                <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                            </div>
+                          </div>
+                          <div class="card mb-4 shadow-sm">
+                            <div class="card-header p-3 mb-2 bg-danger text-white">
+                                    <h4 class="my-0 font-weight-normal">Perfume</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/perfume-natura.png" alt ="Em produção" class="img-fluid"/>
+                                <h1 class="card-title pricing-card-title">R$79,99</h1>
+                                <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                            </div>
+                          </div>
+                          <div class="card mb-4 shadow-sm">
+                            <div class="card-header p-3 mb-2 bg-danger text-white">
+                              <h4 class="my-0 font-weight-normal">Creme Hidratante</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/creme-natura.png" alt ="Em produção" class="img-fluid"/>
+                                <h1 class="card-title pricing-card-title">R$39,99</h1>
+                                <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!--Eudora-->
+                    <h3 id="2">Eudora</h3>
+                    <br>
+                    <div class="container">
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header p-3 mb-2 bg-danger text-white">
+                                    <h4 class="my-0 font-weight-normal">Batom</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/batom-eudora.png" alt ="Em produção" class="img-fluid"/>
+                                    <h1 class="card-title pricing-card-title">R$24,99</h1>
+                                    <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                                </div>
+                              </div>
+                              <div class="card mb-4 shadow-sm">
+                                <div class="card-header p-3 mb-2 bg-danger text-white">
+                                        <h4 class="my-0 font-weight-normal">Perfume</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/perfume-eudora.png" alt ="Em produção" class="img-fluid"/>
+                                    <h1 class="card-title pricing-card-title">R$79,99</h1>
+                                    <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                                </div>
+                              </div>
+                              <div class="card mb-4 shadow-sm">
+                                <div class="card-header p-3 mb-2 bg-danger text-white">
+                                  <h4 class="my-0 font-weight-normal">Creme Hidratante</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/creme-eudora.png" alt ="Em produção" class="img-fluid"/>
+                                    <h1 class="card-title pricing-card-title">R$39,99</h1>
+                                    <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!--Avon-->
+                    <h3 id="3">Avon</h3>
+                    <br>
+                    <div class="container">
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header p-3 mb-2 bg-danger text-white">
+                                    <h4 class="my-0 font-weight-normal">Batom</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/batom-avon.png" alt ="Em produção" class="img-fluid"/>
+                                    <h1 class="card-title pricing-card-title">R$24,99</h1>
+                                    <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                                </div>
+                              </div>
+                              <div class="card mb-4 shadow-sm">
+                                <div class="card-header p-3 mb-2 bg-danger text-white">
+                                        <h4 class="my-0 font-weight-normal">Perfume</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/perfume-avon.png" alt ="Em produção" class="img-fluid"/>
+                                    <h1 class="card-title pricing-card-title">R$79,99</h1>
+                                    <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                                </div>
+                              </div>
+                              <div class="card mb-4 shadow-sm">
+                                <div class="card-header p-3 mb-2 bg-danger text-white">
+                                  <h4 class="my-0 font-weight-normal">Creme Hidratante</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/creme-avon.png" alt ="Em produção" class="img-fluid"/>
+                                    <h1 class="card-title pricing-card-title">R$39,99</h1>
+                                    <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!--O Boticário-->
+                    <h3 id="4">O Boticário</h3>
+                    <br>
+                    <div class="container">
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm">
+                                <div class="card-header p-3 mb-2 bg-danger text-white">
+                                    <h4 class="my-0 font-weight-normal">Batom</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/batom-oboticario.png" alt ="Em produção" class="img-fluid"/>
+                                    <h1 class="card-title pricing-card-title">R$24,99</h1>
+                                    <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                                </div>
+                              </div>
+                              <div class="card mb-4 shadow-sm">
+                                <div class="card-header p-3 mb-2 bg-danger text-white">
+                                        <h4 class="my-0 font-weight-normal">Perfume</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/perfume-oboticario.png" alt ="Em produção" class="img-fluid"/>
+                                    <h1 class="card-title pricing-card-title">R$79,99</h1>
+                                    <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                                </div>
+                              </div>
+                              <div class="card mb-4 shadow-sm">
+                                <div class="card-header p-3 mb-2 bg-danger text-white">
+                                  <h4 class="my-0 font-weight-normal">Creme Hidratante</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="images/creme-oboticario.png" alt ="Em produção" class="img-fluid"/>
+                                    <h1 class="card-title pricing-card-title">R$39,99</h1>
+                                    <input type="submit" value="Comprar" class="shop" onclick="ativarPOP()"></input>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="produto-single">
-                    <img src="images/perfume-natura.png"/>
-                    <p>Perfume da Natura R$69,99</p>
+
+                <div class="col-3">
+                    <h3>Links de Navegação</h3>                       
+                    <br>
+                    <div class="menu"> 
+                        <hr>
+                        <br>
+                        <ul>
+                            <li><a href="#1">Natura</a></li>
+                            <br>
+                            <li><a href="#2">Eudora</a></li>
+                            <br>
+                            <li><a href="#3">Avon</a></li>
+                            <br>
+                            <li><a href="#4">O Boticário</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="produto-single">
-                    <img src="images/creme-natura.png"/>
-                    <p>Creme da Natura R$39,99</p>
-                </div>
-            </div>
-            <br>
-            <h3>Eudora</h3>
-            <div id="produtos">
-                <div class="produto-single">
-                    <img src="images/batom-eudora.png" class="img-fluid"/>
-                    <p>Batom da Eudora R$24,99</p>
-                </div>
-                <div class="produto-single">
-                    <img src="images/perfume-eudora.png" class="img-fluid"/>
-                    <p>Perfume da Eudora R$69,99</p>
-                </div>
-                <div class="produto-single">
-                    <img src="images/creme-eudora.png" class="img-fluid"/>
-                    <p>Creme da Eudora R$39,99</p>
-                </div>
-            </div>
-            <br>
-            <h3>Avon</h3>
-            <div id="produtos">
-                <div class="produto-single">
-                    <img src="images/batom-avon.png" class="img-fluid"/>
-                    <p>Batom da Avon R$24,99</p>
-                </div>
-                <div class="produto-single">
-                    <img src="images/perfume-avon.png" class="img-fluid"/>
-                    <p>Perfume da Avon R$69,99</p>
-                </div>
-                <div class="produto-single">
-                    <img src="images/creme-avon.png" class="img-fluid"/>
-                    <p>Creme da Avon R$39,99</p>
-                </div>
-            </div>
-            <br>
-            <h3>O Boticário</h3>
-            <div id="produtos">
-                <div class="produto-single">
-                    <img src="images/batom-avon.png" class="img-fluid"/>
-                    <p>Batom da O Boticário R$24,99</p>
-                </div>
-                <div class="produto-single">
-                    <img src="images/perfume-avon.png" class="img-fluid"/>
-                    <p>Perfume da O Boticário | R$69,99</p>
-                </div>
-                <div class="produto-single">
-                    <img src="images/creme-avon.png" class="img-fluid"/>
-                    <p>Creme da O Boticário R$39,99</p>
                 </div>
             </div>
         </article>
@@ -145,6 +252,11 @@
     <footer>
         <p>Copyright &copy; Site produzido por Stiven Richardy. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        function ativarPOP() {
+            alert("Bloqueado!")
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
